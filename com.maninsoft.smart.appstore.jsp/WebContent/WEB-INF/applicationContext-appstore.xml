@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="no" default-lazy-init="false" default-dependency-check="none">
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="conf/config.properties"/>
+	</bean>
+	
+	<bean id="storeUtil" class="com.maninsoft.smart.appstore.jsp.StoreUtil">
+		<property name="codeMap">
+			<map>
+				<entry key="smartworks"><list><value>스마트웍스</value><value>Smart Works</value></list></entry>
+				<entry key="appstore"><list><value>앱스토어</value><value>App Store</value></list></entry>
+				<entry key="price"><list><value>가격</value><value>Price</value></list></entry>
+				<entry key="functionCategory"><list><value>기능별</value><value>Function Category</value></list></entry>
+			</map>
+		</property>
+		<property name="asHome" value="${StoreUtil.asHome}"/>
+		<property name="appFileDirectory" value="${StoreUtil.appFileDirectory}"/>
+	</bean>
+	
+</beans>

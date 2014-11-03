@@ -1,0 +1,1 @@
+<input type="button" value="Close" onclick="Mis.releaseModalDialog(false);">

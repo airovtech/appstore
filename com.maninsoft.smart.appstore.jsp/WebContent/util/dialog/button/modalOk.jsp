@@ -1,0 +1,1 @@
+<input type="button" value="OK" onclick="Mis.releaseModalDialog(true);" style="width: 80px;">

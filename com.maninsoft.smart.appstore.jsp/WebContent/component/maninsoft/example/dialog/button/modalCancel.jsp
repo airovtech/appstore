@@ -1,0 +1,1 @@
+<input type="button" value="Cancel" onclick="Mis.releaseModalDialog(false);" style="width: 80px;">
